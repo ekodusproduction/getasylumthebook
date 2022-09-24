@@ -1,0 +1,159 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+#subscribeForm .form-select,
+#subscribeForm .form-control,
+::placeholder {
+  font-size: 12px;
+}
+
+.banner {
+  min-height: 100vh;
+  background-image: url(../image/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+}
+
+.title .left_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 17, 17, 25%);
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.title .left_div h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.heading {
+  color: #303030;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.title .left_div p {
+  font-weight: 500;
+}
+
+.book_image {
+  width: 300px;
+}
+
+#subscribeForm .form-control[type="text"],
+#subscribeForm .form-control[type="email"],
+#subscribeForm .form-select {
+  height: 45px;
+}
+
+#subscribeForm .form-control {
+  border-radius: 5px;
+}
+
+.btn-subscribe {
+  background-color: #111;
+  color: #fff;
+  border-radius: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.btn-subscribe:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+.author_imge {
+  width: 400px;
+}
+
+.author_socials {
+  display: flex;
+}
+
+.author_socials div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.author_socials div:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.author_socials div:hover .social_icon {
+  color: #fff;
+}
+
+.social_icon {
+  color: #303030;
+  border-radius: 50%;
+}
+
+.author_signature {
+  width: 200px;
+  margin: 0;
+}
+
+.footer {
+  background-color: #303030;
+  padding: 50px 0 20px 0;
+  font-size: 12px;
+}
+
+.footer ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footer ul#social li a {
+  text-decoration: none;
+  color: #7e7e7e;
+  padding: 0 10px;
+}
+
+.footer ul#social li a:hover {
+  color: #fff;
+}
+
+.footer ul#contact li {
+  color: #7e7e7e;
+  padding: 0 10px;
+}
+
+.footer ul#contact li a {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+.footer .copyright_text {
+  color: #7e7e7e;
+}

@@ -1,0 +1,61 @@
+@media (max-width: 575.98px) {
+  .title .left_div {
+    background-color: unset;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .title .left_div h1 {
+    font-size: 1.5rem;
+  }
+
+  .book_image {
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  #subscribe {
+    padding: 40px 0;
+  }
+
+  .author_imge {
+    width: 250px;
+  }
+
+  #word_from_author {
+    margin-top: 50px;
+  }
+
+  #subscribeForm .form-control[type="text"] {
+    height: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #word_from_author {
+    margin-top: 50px;
+  }
+
+  .title .left_div {
+    margin-top: 60px;
+    background-color: unset;
+    padding: unset;
+  }
+
+  .book_image {
+    width: 200px;
+  }
+
+  #subscribeForm .form-control[type="text"] {
+    height: 40px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
