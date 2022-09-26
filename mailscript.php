@@ -66,6 +66,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
          $return['msgType'] = true;
          $return['msg'] = "Thank you for subscribe";
+
+         // Send acknowledgement mail
+         $mail2 = new PHPMailer();
+         $mail2->IsSMTP();
+         $mail2->Mailer = "smtp";
+
+         $mail2->SMTPDebug  = 1;
+         $mail2->SMTPAuth   = true;
+         $mail2->SMTPSecure = "ssl";
+         $mail2->Port       = 465;
+         $mail2->Host       = "mail.getasylumthebook.com";
+         $mail2->Username = "no-reply@getasylumthebook.com";
+         $mail2->Password = "Developer@123";
+
+         $mail2->AddAddress($_POST["email"], "Pre Order");
+         $mail2->setfrom("no-reply@getasylumthebook.com");
+         $mail2->AddReplyTo($_POST["email"], $_POST["name"]);
+         $mail2->IsHTML(true);
+         $MESSAGE_BODY2 = "Thank you for your order";
+         $mail2->Subject = "Pre order successful";
+         $mail2->Body = $MESSAGE_BODY2;
+         $mail2->Send();
+         
          echo json_encode($return);
       }
    }
